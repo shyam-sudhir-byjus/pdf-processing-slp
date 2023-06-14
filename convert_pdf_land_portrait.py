@@ -24,6 +24,7 @@ def check_page_orientation(file_path):
     pdf = PdfReader(open(file_path, 'rb'))
     pdf_w = PdfWriter()
     
+    flag = False
     for page_num in range(len(pdf.pages)):
         page = pdf.pages[page_num]
 
